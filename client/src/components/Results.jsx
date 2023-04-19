@@ -1,10 +1,11 @@
 import React from 'react'
+import { StyledResults } from './styles/Results.styles'
 
 const Results = ( { allTabs, currentTabIndex } ) => {
     return (
-        <div className="results">
+        <StyledResults className="results">
             { allTabs[currentTabIndex].content }
-        </div>
+        </StyledResults>
     )
 }
 
